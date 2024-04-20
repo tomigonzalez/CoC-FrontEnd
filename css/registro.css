@@ -1,0 +1,71 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 90%;
+    align-items: baseline;
+    margin-left: 5%;
+}
+
+/* Estilo general del formulario */
+.container {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 10%;
+  }
+  
+  form{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Campos de entrada */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 50%;
+    padding: 10px 7%;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-bottom: 4%;
+    background-color: var(--fondo);
+    color: var(--letras);
+    height: 25px;
+    font-family: var(--fuentePrincipal);
+    font-size: 2rem;
+  }
+  ::placeholder{
+    color: var(--letras);
+    font-weight: bold;
+    font-family: var(--fuentePrincipal);
+  }
+
+  /* Botón de envío */
+button[type="submit"] {
+    display: flex;
+    justify-content: center;
+    background-color: var(--logo);
+    color: white;
+    font-weight: bold;
+    width: 30vw;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    font-family: var(--fuentePrincipal);
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    form{
+        width: 100%;
+    }
+    button[type="submit"]{
+        width: 0;
+        width: auto;
+    }
+}

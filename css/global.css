@@ -1,0 +1,38 @@
+:root{
+    --fondo: #FEFBEC;
+    --logo: #035155;
+    --pie: #FF6C22;
+    --letras: #242424;
+
+    --fuentePrincipal: "Inter", sans-serif;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    background-color: var(--fondo);
+    font-size: 1.6 rem;
+    line-height: 1.5;
+}
+
+p{
+    font-size: 1.8rem;
+    font-family: var(--fuentePrincipal);
+    color: var(--letras);
+    font-weight: 300;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+hr{
+    width: 95%;
+}

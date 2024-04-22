@@ -1,0 +1,106 @@
+main {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  font-size: small;
+}
+
+nav {
+  width: 30%;
+  height: 100%;
+}
+a {
+  color: var(--letras);
+}
+a:hover {
+  color: var(--pie);
+}
+nav ul {
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row;
+}
+
+.user {
+  width: 15%;
+  height: 100%;
+}
+.user ul {
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
+.logo {
+  width: 8%;
+  height: 100%;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.content-principal {
+  width: 100%;
+  height: 30%;
+}
+
+.img-principal {
+  width: 35%;
+  height: 50%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+}
+
+.img-circle {
+  width: 25rem;
+  height: 100%;
+}
+.img-circle2 {
+  width: 13rem;
+  height: 100%;
+}
+.img-circle2 a {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-circle2 a:hover {
+  background-color: #047176;
+}
+
+.arrowcolor {
+  border-radius: 100%;
+  background-color: var(--logo);
+}
+i {
+  font-size: xx-large;
+  color: var(--fondo);
+}
+
+.img-principal img {
+  width: 100%;
+  height: 100%;
+}

@@ -11,11 +11,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <!--slick-->
+
     <!-- Enlaces CSS -->
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/global.css">
     <!-- Font awesome-->
     <script src="https://kit.fontawesome.com/836715cda7.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -87,10 +90,56 @@
 
             </div>
             <hr class="hrcorto">
-            <div class="contenedor-2docontenido"></div>
+            <div class="contenedor-2docontenido">
+                <div class="posicion">
+                    <div class="imagenprinc"><img src="./assets/img/image 2.png" alt="imagen representativa">
+                    </div>
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Integer sed est ut ligula bibendum ultricies.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr class="hrcorto">
         </section>
-
     </main>
+    <article class="slidercontent">
+        <h2>NEW ARRIVAL</h2>
+        <div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <ul class="carousel">
+
+                <li class="card">
+                    <div class="img"><img src="./assets/img/SAINTS 2.png" alt="img" draggable="false"></div>
+                    <div class="textoss">
+                        <h2>Ipsum Lorem</h2>
+                        <span>Ipsum Lorem</span>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="./assets/img/STEELERS 1.png" alt="img" draggable="false"></div>
+                    <div class="textoss">
+                        <h2>Ipsum Lorem</h2>
+                        <span>Ipsum Lorem</span>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="./assets/img/SAINTS 2.png" alt="img" draggable="false"></div>
+                    <div class="textoss">
+                        <h2>Ipsum Lorem</h2>
+                        <span>Ipsum Lorem</span>
+                    </div>
+                </li>
+            </ul>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+        <div class="botoncontenedor"><button>VIEW MORE</button></div>
+    </article>
+
+
+
+    <script src="./js/slider.js"></script>
 </body>
 
 </html>

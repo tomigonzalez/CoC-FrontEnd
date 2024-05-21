@@ -6,40 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de contacto</title>
     <link rel="stylesheet" href="../css/form.css">
-</head>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/global.css" </head>
 
 <body>
-    <div class="container">
-        <h1>Formulario de contacto</h1>
-        <form id="contactForm" novalidate>
-            <label for="user">Usuario:</label>
-            <input type="text" id="user" name="user" placeholder="Ingrese su usuario" required>
-            <span class="error-message" id="userError"></span>
+    <section class="position-contact">
+        <header>
 
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico" required>
-            <span class="error-message" id="emailError"></span>
+            <div class="logo">
+                <a href="./login.html"><img src="../assets/img/log 1.png" alt="logo"></a>
+            </div>
 
-            <label for="gender">Género:</label>
-            <select id="gender" name="gender" required>
-                <option value="">Seleccione...</option>
-                <option value="masculino">Masculino</option>
-                <option value="femenino">Femenino</option>
-            </select>
-            <span class="error-message" id="genderError"></span>
+            <nav>
+                <ul>
+                    <a href="../index.html">
+                        <li>INICIO</li>
+                    </a>
+                    <a href="./shop.html">
+                        <li>SHOP</li>
+                    </a>
+                    <a href="#">
+                        <li>SALE</li>
+                    </a>
+                    <a href="#">
+                        <li>CONTACT</li>
+                    </a>
+                </ul>
+            </nav>
 
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" placeholder="Ingrese su mensaje" rows="5" required></textarea>
-            <span class="error-message" id="messageError"></span>
+            <div class="user">
+                <ul>
+                    <a href="./register.html">
+                        <li>REGISTER</li>
+                    </a>
+                    <a href="./ogin.html">
+                        <li>LOGIN</li>
+                    </a>
+                </ul>
+            </div>
+        </header>
+        <div class="container">
 
-            <input type="checkbox" id="terms" name="terms" required>
-            <label for="terms">Acepto los términos y condiciones</label>
-            <span class="error-message" id="termsError"></span>
+            <form id="contactForm" novalidate>
 
-            <button type="submit">Enviar formulario</button>
-        </form>
-    </div>
+                <input type="text" id="user" name="user" placeholder="Usuario" required>
+                <span class="error-message" id="userError"></span>
 
+
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <span class="error-message" id="emailError"></span>
+                <div>
+
+
+                    <select id="gender" name="gender" required>
+                        <option value="">Genero</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                    </select>
+
+                    <div class="check">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">Acepto los términos y condiciones</label>
+                        <span class="error-message" id="termsError"></span>
+                    </div>
+                </div>
+
+                <span class="error-message" id="genderError"></span>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" placeholder="Ingrese su mensaje" rows="5" required></textarea>
+                <span class="error-message" id="messageError"></span>
+
+
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
     <script src="../js/validar.js"></script>
 </body>
 

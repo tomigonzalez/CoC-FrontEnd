@@ -22,14 +22,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let valid = true;
 
-    // Clear previous error messages
     for (const key in fields) {
       const errorElement = document.getElementById(`${key}Error`);
       errorElement.textContent = "";
       errorElement.style.display = "none";
     }
 
-    // Validate fields
     for (const key in fields) {
       const field = fields[key];
       const errorElement = document.getElementById(`${key}Error`);
@@ -49,10 +47,9 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
-    // If all fields are valid, submit the form (for this example, just show an alert)
     if (valid) {
       alert("Formulario enviado correctamente.");
-      form.reset(); // Reset the form after submission
+      form.reset();
     }
   });
 });

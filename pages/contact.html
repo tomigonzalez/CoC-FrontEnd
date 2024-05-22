@@ -55,25 +55,32 @@
 
                 <input type="email" id="email" name="email" placeholder="Email" required>
                 <span class="error-message" id="emailError"></span>
-                <div>
 
+                <div class="gencheck">
+                    <div class="gen">
+                        <select id="gender" name="gender" required>
+                            <option value="">Genero</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
 
-                    <select id="gender" name="gender" required>
-                        <option value="">Genero</option>
-                        <option value="masculino">Masculino</option>
-                        <option value="femenino">Femenino</option>
-                    </select>
+                        </select>
+                        <span class="error-message" id="genderError"></span>
+                    </div>
+
 
                     <div class="check">
-                        <input type="checkbox" id="terms" name="terms" required>
-                        <label for="terms">Acepto los términos y condiciones</label>
+                        <div class="checkposition">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">Acepto los términos y condiciones</label>
+                        </div>
                         <span class="error-message" id="termsError"></span>
                     </div>
                 </div>
 
-                <span class="error-message" id="genderError"></span>
 
-                <label for="message">Mensaje:</label>
+
+
+
                 <textarea id="message" name="message" placeholder="Ingrese su mensaje" rows="5" required></textarea>
                 <span class="error-message" id="messageError"></span>
 

@@ -59,7 +59,53 @@ button[type="submit"] {
     cursor: pointer;
 }
 
-@media (max-width: 500px) {
+ @media (min-width: 769px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="password"]{
+    margin-bottom: 10%;
+    width: 80%;
+  }
+  button[type="submit"]{
+    width: 18vw;
+    font-size: 1.5em;
+  }
+  .container{
+    margin-top: 8%;
+  }
+} 
+
+@media (min-width: 545px) and (max-width: 768px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="password"]{
+    width: 80%;
+    margin-bottom: 20%;
+  }
+}
+
+@media (max-width: 544px) {
+    .container{
+      margin-top: 40%;
+    }
+    button[type="submit"]{
+      width: 30vw;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"]{
+      width: 80%;
+      margin-bottom: 20%;
+    }
+    form{
+      width: 100%;
+    }
+}
+
+
+
+
+/* @media (max-width: 500px) {
     form{
         width: 100%;
     }
@@ -67,4 +113,4 @@ button[type="submit"] {
         width: 0;
         width: auto;
     }
-}
+} */
